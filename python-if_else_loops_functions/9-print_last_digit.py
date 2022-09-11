@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+
+
 def print_last_digit(number):
     number_l = number * -1
     if number < 0:
