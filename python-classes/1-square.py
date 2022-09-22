@@ -9,7 +9,7 @@ class Square:
     class square
     """
     def __init__(self, size):
-        """ init is a method for 
-        initialize and give to 
+        """ init is a method for
+        initialize and give to
         values for an object"""
         self.__size = size
