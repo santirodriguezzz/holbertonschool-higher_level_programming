@@ -12,4 +12,4 @@ class Square:
         """ init is a method for 
         initialize and give to 
         values for an object"""
-        self.size = size
+        self.__size = size
