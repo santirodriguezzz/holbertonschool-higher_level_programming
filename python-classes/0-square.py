@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-""" empty 
+"""create empty
 class
  square"""
 
 
 class Square:
-    """class 
+    """class
         square
     """
     pass
