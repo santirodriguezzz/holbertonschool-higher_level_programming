@@ -6,6 +6,6 @@ class
 
 class Square:
     """class 
-    square
-"""
+        square
+    """
     pass
