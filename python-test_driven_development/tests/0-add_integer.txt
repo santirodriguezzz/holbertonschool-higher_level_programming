@@ -40,3 +40,8 @@ add_integer(toti $$$)
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 NameError: name 'hello' is not defined. Did you mean: 'help'?
+
+>>> add_integer(hola, hello)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'hola' is not defined
