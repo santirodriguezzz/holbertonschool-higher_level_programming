@@ -23,3 +23,9 @@ SyntaxError: leading zeros in decimal integer literals are not permitted; use an
     add_integer(..)
                 ^
 SyntaxError: invalid syntax
+
+>>> add_integer(420)
+518
+
+>>> add_integer(33,21)
+54
