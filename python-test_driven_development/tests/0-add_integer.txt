@@ -23,3 +23,12 @@ SyntaxError: leading zeros in decimal integer literals are not permitted; use an
 
 >>> add_integer(33,21)
 54
+
+add_integer(NaN)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'NaN' is not defined
+
+add_integer(toti $$$)
+  File "<stdin>", line 1
+    add_integer(toti $$$)
