@@ -18,12 +18,6 @@ TypeError: add_integer() missing 1 required positional argument: 'a'
                 ^
 SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers
 
->>> add_integer(..)
-  File "<stdin>", line 1
-    add_integer(..)
-                ^
-SyntaxError: invalid syntax
-
 >>> add_integer(420)
 518
 
