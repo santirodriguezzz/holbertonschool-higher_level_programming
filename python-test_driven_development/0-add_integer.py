@@ -3,8 +3,7 @@
 
 
 def add_integer(a, b=98):
-"""check a and b"""
-
+    """check a and b"""
     if a is None or type(a) is not float and type(a) is not int:
         raise TypeError("a must be an integer")
     if a is None or type(b) is not float and type(b) is not int:
