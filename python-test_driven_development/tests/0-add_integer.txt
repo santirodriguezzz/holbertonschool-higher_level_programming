@@ -32,3 +32,6 @@ NameError: name 'NaN' is not defined
 add_integer(toti $$$)
   File "<stdin>", line 1
     add_integer(toti $$$)
+
+>>> add_integer(-2, 100)
+98
