@@ -35,3 +35,8 @@ add_integer(toti $$$)
 
 >>> add_integer(-2, 100)
 98
+
+>>> add_integer(-2, hello)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'hello' is not defined. Did you mean: 'help'?
