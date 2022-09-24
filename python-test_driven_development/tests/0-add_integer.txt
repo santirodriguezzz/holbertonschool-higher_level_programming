@@ -25,7 +25,3 @@ NameError: name 'NaN' is not defined
 
 >>> add_integer(-2, 100)
 98
-
->>> add_integer('User')
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
