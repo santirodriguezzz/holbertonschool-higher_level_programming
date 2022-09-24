@@ -1,8 +1,16 @@
 #!/usr/bin/python3
+"""python interpreter"""
+
+
 def matrix_divided(matrix, div):
-"""
-function that divides a matrixxs
-"""
+    """function that divides a matrixxs by a number
+    args: 
+        matrix with list of numbers
+        div (int) number to divide matrix intem
+    Returns:
+        new matrix
+    """
+
     i_num = 0
     for i in matrix:
         if i_num != 0 and len(i) != i_length:
