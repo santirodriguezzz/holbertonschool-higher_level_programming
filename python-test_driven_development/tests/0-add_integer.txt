@@ -26,12 +26,7 @@ NameError: name 'NaN' is not defined
 >>> add_integer(-2, 100)
 98
 
->>> add_integer(hola, hello)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-NameError: name 'hola' is not defined
-
->>> add_integer(add_integer)
+>>> add_integer(None)
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 NameError: name 'add_integer' is not defined
