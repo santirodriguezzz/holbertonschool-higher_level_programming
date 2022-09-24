@@ -4,7 +4,7 @@
 
 def matrix_divided(matrix, div):
     """function that divides a matrixxs by a number
-    args: 
+    args:
         matrix with list of numbers
         div (int) number to divide matrix intem
     Returns:
@@ -19,7 +19,7 @@ def matrix_divided(matrix, div):
         for item in i:
             if type(item) is not int and type(item) is not float:
                 raise TypeError('matrix must be a matrix (list of lists)'
-                                ' of integers/floats')     
+                                ' of integers/floats')
         i_num += 1
     if type(div) is not int and type(div) is not float:
         raise TypeError('div must be a number')
@@ -32,5 +32,5 @@ def matrix_divided(matrix, div):
         for item in i:
             new_list.append(round(item / div, 2))
         new_matrix.append(new_list)
-    
+
     return new_matrix
