@@ -12,12 +12,6 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: add_integer() missing 1 required positional argument: 'a'
 
->>> add_integer(02)
-  File "<stdin>", line 1
-    add_integer(02)
-                ^
-SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers
-
 >>> add_integer(420)
 518
 
@@ -28,10 +22,6 @@ add_integer(NaN)
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 NameError: name 'NaN' is not defined
-
-add_integer(toti $$$)
-  File "<stdin>", line 1
-    add_integer(toti $$$)
 
 >>> add_integer(-2, 100)
 98
@@ -45,3 +35,8 @@ NameError: name 'hello' is not defined. Did you mean: 'help'?
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 NameError: name 'hola' is not defined
+
+>>> add_integer(0 , 0)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'add_integer' is not defined
