@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 def matrix_divided(matrix, div):
+"""
+function that divides a matrixxs
+"""
     i_num = 0
     for i in matrix:
         if i_num != 0 and len(i) != i_length:
