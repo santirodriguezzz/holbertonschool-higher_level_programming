@@ -2,4 +2,5 @@
 """Module"""
 
 def lookup(obj):
+    """class"""
     print(dir(obj))
