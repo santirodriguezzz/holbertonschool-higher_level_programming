@@ -26,22 +26,6 @@ Using ''my_list''
 Traceback (most recent call last):
 TypeError: 'MyList' object is not callable
 
->>> MyList(__str__)
+>>> my_list(str)
 Traceback (most recent call last):
-NameError: name '__str__' is not defined
-
->>> my_list = MyList()
->>> my_list.print_sorted()
-[]
-
->>> my_list = MyList()
->>> MyList([123, 321, 2445])
-[123, 321, 2445]
-
->>> my_list = MyList()
->>> MyList(__str__)
-Traceback (most recent call last):
-NameError: name '__str__' is not defined. Did you mean: '__spec__'?
-
->>> MyList()
-[]
+TypeError: 'MyList' object is not callable
