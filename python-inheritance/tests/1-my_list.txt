@@ -26,10 +26,6 @@ Using ''my_list''
 Traceback (most recent call last):
 TypeError: 'MyList' object is not callable
 
->>> my_list(__str__)
-Traceback (most recent call last):
-NameError: name '__str__' is not defined. Did you mean: '__spec__'?
-
 >>> my_list(str)
 Traceback (most recent call last):
 TypeError: 'MyList' object is not callable
