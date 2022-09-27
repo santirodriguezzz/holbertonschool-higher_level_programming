@@ -29,3 +29,7 @@ TypeError: 'MyList' object is not callable
 >>> my_list(str)
 Traceback (most recent call last):
 TypeError: 'MyList' object is not callable
+
+>>> my_list = MyList()
+>>> MyList(['hola', 'mundo'])
+['hola', 'mundo']
