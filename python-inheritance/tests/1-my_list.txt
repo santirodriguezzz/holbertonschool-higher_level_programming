@@ -13,3 +13,11 @@ Using ''my_list''
 >>> my_list.append(9)
 >>> my_list.print_sorted()
 [3, 4, 5, 9]
+
+>>> my_list.append(-2)
+>>> my_list.append(-5)
+>>> my_list.append(8)
+>>> my_list.append(9)
+>>> my_list.append(11)
+>>> my_list.print_sorted()
+[-5, -2, 3, 4, 5, 8, 9, 9, 11]
