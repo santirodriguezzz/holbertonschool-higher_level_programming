@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""python3 interpreter"""
+"""python interpreter"""
 
 
  def append_write(filename="", text=""):
