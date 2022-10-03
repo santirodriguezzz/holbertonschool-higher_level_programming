@@ -88,3 +88,8 @@ class Rectangle(Base):
             for l in range(0, self.width):
                 print("#", end="")
             print()
+
+    def __str__(self):
+        """Creates a string object from a given object"""
+        return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} -"\
+            f"{self.__width}/{self.__height}"
