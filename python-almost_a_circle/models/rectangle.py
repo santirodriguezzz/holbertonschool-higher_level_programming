@@ -80,14 +80,14 @@ class Rectangle(Base):
 
     def display(self):
         """prints to stdout the square with car #"""
-        for i in range(0, self.y):
-            print("$")
-        for j in range(0, self.height):
-            for h in range(0, self.x):
+        for i in range(self.y):
+            print()
+        for j in range(self.height):
+            for h in range(self.x):
                 print(" ", end="")
-            for l in range(0, self.width):
+            for l in range(self.width):
                 print("#", end="")
-            print("$")
+            print()
 
     def __str__(self):
         """Creates a string object from a given object"""
