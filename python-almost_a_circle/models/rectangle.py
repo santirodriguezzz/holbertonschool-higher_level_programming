@@ -77,3 +77,14 @@ class Rectangle(Base):
     def area(self):
         """return area"""
         return self.__width * self.__height
+
+    def display(self):
+        """prints to stdout the square with car #"""
+        for i in range(0, self.y):
+            print()
+        for j in range(0, self.height):
+            for h in range(0, self.x):
+                print(" ", end="")
+            for l in range(0, self.width):
+                print("#", end="")
+            print()
