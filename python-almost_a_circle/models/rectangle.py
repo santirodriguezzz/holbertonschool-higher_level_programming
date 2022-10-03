@@ -66,6 +66,7 @@ class Rectangle(Base):
         self.errors(value, "y")
 
     def errors(self, value, name):
+        """function for errors"""
         if type(value) != int:
             raise TypeError(f"{name} must be an integer")
         if value <= 0 and name in ("width", "height"):
