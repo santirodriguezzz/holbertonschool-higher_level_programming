@@ -10,7 +10,7 @@ class Rectangle(Base):
     
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """constructor""" 
+        """initialize class""" 
         super().__init__(id)
         self.__width = width
         self.__height = height
@@ -45,7 +45,7 @@ class Rectangle(Base):
             raise ValueError("height must be > 0")
         self.__height = value
 
-        @property
+    @property
     def x(self):
         """retrive x"""
         return self.__x
@@ -59,7 +59,7 @@ class Rectangle(Base):
             raise ValueError("x must be > 0")
         self.__x = value
 
-        @property
+    @property
     def y(self):
         """retrive y"""
         return self.__y
