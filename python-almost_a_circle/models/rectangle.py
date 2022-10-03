@@ -81,13 +81,13 @@ class Rectangle(Base):
     def display(self):
         """prints to stdout the square with car #"""
         for i in range(0, self.y):
-            print()
+            print("$")
         for j in range(0, self.height):
             for h in range(0, self.x):
                 print(" ", end="")
             for l in range(0, self.width):
                 print("#", end="")
-            print()
+            print("$")
 
     def __str__(self):
         """Creates a string object from a given object"""
