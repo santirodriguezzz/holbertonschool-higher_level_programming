@@ -15,6 +15,10 @@ class Rectangle(Base):
         self.__height = height
         self.__x = x
         self.__y = y
+        self.errors(width, "width")
+        self.errors(height, "height")
+        self.errors(x, "x")
+        self.errors(y, "y")
 
     @property
     def width(self):
