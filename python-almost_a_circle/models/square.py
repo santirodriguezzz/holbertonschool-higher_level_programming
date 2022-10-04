@@ -27,3 +27,25 @@ class Square(Rectangle):
         """Creates a string object from a given object"""
         return f"[Square] ({self.id}) {self.x}/{self.y} -"\
             f" {self.width}"
+
+    def update(self, *args, **kwargs):
+        """Assigns a value argument to each attribute"""
+        try:
+            self.id = args[0]
+            self.size = args[1]
+            self.x = args[2]
+            self.y = args[3]
+        except IndexError:
+            pass 
+
+        if "id" in kwargs:
+            self.id = kwargs["id"]
+
+        if "size" in kwargs:
+            self.size = kwargs["size"]
+
+        if "x" in kwargs:
+            self.x = kwargs["x"]
+
+        if "y" in kwargs:
+            self.y = kwargs["y"]
