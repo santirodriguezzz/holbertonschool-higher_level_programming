@@ -22,3 +22,8 @@ class Square(Rectangle):
         """set size"""
         self.__width = size
         self.__height = size
+
+    def __str__(self):
+        """Creates a string object from a given object"""
+        return f"[Square] ({id}) {self.__x}/{self.__y} -"\
+            f" {self.__width}/{self.__height}"
