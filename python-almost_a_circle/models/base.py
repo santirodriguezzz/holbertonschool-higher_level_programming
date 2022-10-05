@@ -92,13 +92,13 @@ class Base:
     @classmethod
     def load_from_file(cls):
         """
-        It creates a list of instances from a json file.  
+        It creates a list of instances from a json file.
         :param cls: the class
         :return: A list of instances
         """
         my_List = []
 
-        fileName = cls.__name__ + ".json"
+        fileName = cls.__name__+".json"
         if path.exists(fileName):
             with open(fileName, encoding='utf-8') as f:
                 list_Dict = cls.from_json_string(f.read())
