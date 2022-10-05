@@ -36,7 +36,7 @@ class Square(Rectangle):
             self.x = args[2]
             self.y = args[3]
         except IndexError:
-            pass 
+            pass
 
         if "id" in kwargs:
             self.id = kwargs["id"]
