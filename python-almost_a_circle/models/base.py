@@ -6,6 +6,7 @@ from os import path
 
 
 class Base:
+    """class Base"""
 
     __nb_objects = 0
 
@@ -90,7 +91,11 @@ class Base:
 
     @classmethod
     def load_from_file(cls):
-        """returns a list of instances"""
+        """
+        It creates a list of instances from a json file.  
+        :param cls: the class
+        :return: A list of instances
+        """
         my_List = []
 
         fileName = cls.__name__ + ".json"
