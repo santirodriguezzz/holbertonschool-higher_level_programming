@@ -6,7 +6,7 @@ import unittest
 
 class basetests1(unittest.TestCase)
 
-    def setUp(self):
+    def testsetUp(self):
         self.b = Base()
 
     def test_1(self):
