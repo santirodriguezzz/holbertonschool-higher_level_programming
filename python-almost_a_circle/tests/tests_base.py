@@ -4,8 +4,8 @@ from models.base import Base
 import unittest
 
 
-class basetests1(unittest.TestCase)
-
+class basetests1(unittest.TestCase):
+    """tests attribute id"""
     def testsetUp(self):
         self.b = Base()
 
