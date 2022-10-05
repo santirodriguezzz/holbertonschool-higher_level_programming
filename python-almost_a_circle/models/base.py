@@ -47,6 +47,6 @@ class Base:
         if json_string is None:
             return "[]"
         if json_string == 0:
-            return []
+            return "[]"
         list_Dics = json.loads(json_string)
         return list_Dics
