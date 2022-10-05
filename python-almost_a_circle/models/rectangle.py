@@ -79,7 +79,9 @@ class Rectangle(Base):
         return self.__width * self.__height
 
     def display(self):
-        """prints to stdout the square with car #"""
+        """
+        It prints a rectangle of width `width` and 
+        height `height` at position `x`, `y`"""
         for i in range(self.y):
             print()
         for j in range(self.height):
