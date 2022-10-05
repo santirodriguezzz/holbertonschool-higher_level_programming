@@ -102,6 +102,6 @@ class Base:
         if path.exists(fileName):
             with open(fileName, encoding='utf-8') as f:
                 list_Dict = cls.from_json_string(f.read())
-            for list_Dict in list_Dict:
-                my_List.append(cls.create(**dict()))
+            for d in list_Dict:
+                my_List.append(cls.create(**d))
         return my_List
