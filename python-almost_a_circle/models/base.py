@@ -5,13 +5,20 @@ import json
 from os import path
 
 
+# `Base` is a class that has a class attribute `__nb_objects` that is set to 0
 class Base:
-    """ class Base"""
 
+# It's a class attribute that is set to 0.
     __nb_objects = 0
 
     def __init__(self, id=None):
-        """inizialize a base classe"""
+        """
+        If the id is not None,
+        then the id is set to the id passed in. If the id is None, then the id is set
+        to the number of objects created.
+        
+        :param id: the id of the instance
+        """
         if id is not None:
             self.id = id
         else:
@@ -20,7 +27,12 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
-        """returns the JSON string representation"""
+        """
+        It converts a list of dictionaries to a JSON string.
+        
+        :param list_dictionaries: a list of dictionaries
+        :return: A JSON string representation of list_dictionaries.
+        """
         if list_dictionaries is None:
             return "[]"
         else:
@@ -28,7 +40,15 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
-        """ writes the JSON string representation"""
+        """
+        "Save a list of objects to a file in JSON format."
+        
+        The first line of the function is a docstring. It's a good idea to include a docstring in every
+        function you write
+        
+        :param cls: the class that we're calling the method on
+        :param list_objs: a list of instances who inherits of Base
+        """
         fileName = cls.__name__ + ".json"
         list_Dict = []
 
@@ -43,7 +63,12 @@ class Base:
 
     @staticmethod
     def from_json_string(json_string):
-        """that returns the list of the JSON in string"""
+        """
+        If the string is empty or None, return an empty list, otherwise return the list of dictionaries.
+        
+        :param json_string: the string to be converted
+        :return: A list of dictionaries
+        """
         if json_string is None or len(json_string) == 0:
             return []
         list_Dics = json.loads(json_string)
@@ -51,10 +76,28 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
-        """returns an instance with all attributes"""
+        """
+        Create a dummy object of the class, update it with the dictionary, and return it.
+        
+        :param cls: the class that is calling the method
+        :return: A new instance of the class with the attributes updated
+        """
         if cls.__name__ == "Rectangle":
             dummy = cls(1, 3)
         if cls.__name__ == "Square":
             dummy = cls(1)
         dummy.update(**dictionary)
         return dummy
+
+    @classmethod
+    def load_from_file(cls):
+        """returns a list of instances"""
+        my_List = []
+
+        fileName = cls.__name__ + ".json"
+        if path.exists(fileName):
+            with open(fileName, encoding='utf-8') as f:
+                list_Dict = cls.from_json_string(f.read())
+            for list_Dict in list_Dict:
+                my_List.append(cls.create(**dict()))
+        return my_List
