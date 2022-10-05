@@ -40,3 +40,7 @@ class Base:
 
         with open(fileName, mode='w') as f:
             f.write(j_string)
+
+    @staticmethod
+    def from_json_string(json_string):
+        """that returns the list of the JSON in string"""
