@@ -45,9 +45,8 @@ class Base:
     def from_json_string(json_string):
         """that returns the list of the JSON in string"""
         if json_string is None:
-            return []
+            return "[]"
         if json_string == 0:
             return []
         list_Dics = json.loads(json_string)
-        print('f', list_Dics)
         return list_Dics
