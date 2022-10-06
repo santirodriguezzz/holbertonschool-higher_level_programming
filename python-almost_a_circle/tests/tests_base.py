@@ -26,3 +26,12 @@ class basetest2(unittest.TestCase):
     def test_1(self):
         self.b = Base(89)
         self.assertEquals(self.b.id, 89)
+
+class testJson(unittest.TestCase):
+    """test for to_json_string"""
+
+    def setUp(self):
+        self.b = Base()
+
+    def test_0(self):
+        self.assertEquals(self.b.id, 4)
