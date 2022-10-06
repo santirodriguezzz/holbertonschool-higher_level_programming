@@ -34,4 +34,7 @@ class testJson(unittest.TestCase):
         self.b = Base()
 
     def test_0(self):
-        self.assertEquals(self.b.id, 4)
+        self.assertEquals(self.b.to_json_string(None), "[]")
+
+    def test_0(self):
+        self.assertEquals(self.b.to_json_string([1, 2]), "[1, 2]")
