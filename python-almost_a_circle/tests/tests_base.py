@@ -52,4 +52,4 @@ class testJson2(unittest.TestCase):
         self.assertEquals(self.b.to_json_string([]), "[]")
 
     def test_1(self):
-        self.assertEquals(self.b.to_json_string('[{ "id": 89 }]'), [{'id': 89}])
+        self.assertEqual(self.b.from_json_string('[{ "id": 89 }]'), [{'id': 89}])

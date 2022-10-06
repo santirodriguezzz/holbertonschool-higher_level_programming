@@ -97,7 +97,11 @@ class Rectangle(Base):
             f" {self.__width}/{self.__height}"
 
     def update(self, *args, **kwargs):
-        """Assigns a value argument to each attribute"""
+        """
+        If there are arguments,
+        then update the attributes of the class with the arguments
+        """
+
         try:
             self.id = args[0]
             self.__width = args[1]
