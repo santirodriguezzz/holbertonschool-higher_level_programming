@@ -19,3 +19,10 @@ class basetests1(unittest.TestCase):
 
     def test_2(self):
         self.assertEquals(self.k.id, 3)
+
+class basetest2(unittest.TestCase):
+    """test for id"""
+
+    def test_1(self):
+        self.b = Base(89)
+        self.assertEquals(self.b.id, 89)
