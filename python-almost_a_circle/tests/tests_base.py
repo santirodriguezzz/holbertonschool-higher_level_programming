@@ -38,3 +38,12 @@ class testJson(unittest.TestCase):
 
     def test_0(self):
         self.assertEquals(self.b.to_json_string([1, 2]), "[1, 2]")
+
+class testJson2(unittest.TestCase):
+    """test for to_json_string"""
+
+    def setUp(self):
+        self.b = Base()
+
+    def test_1(self):
+        self.assertEquals(self.b.to_json_string(None), "[]")
