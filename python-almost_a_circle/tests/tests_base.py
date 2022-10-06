@@ -11,5 +11,11 @@ class basetests1(unittest.TestCase):
     def setUp(self):
         self.k = Base()
 
-    def test_id(self):
+    def test_0(self):
         self.assertEquals(self.k.id, 1)
+
+    def test_1(self):
+        self.assertEquals(self.k.id, 2)
+
+    def test_2(self):
+        self.assertEquals(self.k.id, 3)
