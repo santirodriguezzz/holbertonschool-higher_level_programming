@@ -23,5 +23,5 @@ VALUES
 INSERT INTO
     `second_table` (`id`, `name`, `score`)
 VALUES
-    (4, "Geor", 3);
+    (4, "Geor", 8);
 
