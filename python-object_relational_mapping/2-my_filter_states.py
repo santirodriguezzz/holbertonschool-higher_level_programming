@@ -15,7 +15,7 @@ if __name__ == '__main__':
     cursor.execute("SELECT * FROM states WHERE name LIKE '{}' \ORDER BY id;".format(sys.argv[4]))
     result = cursor.fetchall()
     for record in result:
-        if record[1][0] == sys.argv[4]:
+        if record[1] == sys.argv[4]:
             print(record)
     cursor.close()
     db.close()
