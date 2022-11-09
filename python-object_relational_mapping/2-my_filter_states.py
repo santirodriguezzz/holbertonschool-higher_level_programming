@@ -12,7 +12,9 @@ if __name__ == '__main__':
         db=sys.argv[3]
     )
     cursor = db.cursor()
-    cursor.execute("SELECT * FROM states WHERE name LIKE '{}' \ ORDER BY id;".format(sys.argv[4]))
+    cursor.execute("SELECT id, name FROM states"
+                " WHERE BINARY name='{}'"
+                " ORDER BY id ASC".format(sys.argv[4]))
     result = cursor.fetchall()
     for record in result:
         if record[1][0] == sys.argv[4]:
