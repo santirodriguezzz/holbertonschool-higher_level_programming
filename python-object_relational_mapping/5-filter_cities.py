@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """script that takes the name of a state as an argument and lists"""
 import MySQLdb
 import sys
