@@ -12,7 +12,8 @@ if __name__ == '__main__':
         db=sys.argv[3]
     )
     cursor = db.cursor()
-    cursor.execute("SELECT c.name FROM cities c \
+    cursor.execute(
+        "SELECT c.name FROM cities c \
         LEFT JOIN states s ON c.state_id = s.id \
         WHERE s.name = %s \
         ORDER BY c.id", (sys.argv[4], ))
@@ -23,4 +24,4 @@ if __name__ == '__main__':
         print(str(record[0]), end='')
     print()
     cursor.close()
-    db.close())
+    db.close()
