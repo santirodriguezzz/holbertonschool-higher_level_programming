@@ -1,4 +1,5 @@
-
+#!/usr/bin/python3
+"""script that lists All cities by state"""
 import MySQLdb
 import sys
 
