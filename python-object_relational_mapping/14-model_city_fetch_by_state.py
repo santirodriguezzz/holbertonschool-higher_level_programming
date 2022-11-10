@@ -8,6 +8,7 @@ from sys import argv
 from model_state import Base, State
 from model_city import City
 
+
 Base = declarative_base()
 
 if __name__ == '__main__':
