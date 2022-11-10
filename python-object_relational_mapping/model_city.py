@@ -5,9 +5,8 @@ from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
 
-class City(Base): 
+class City(Base):
     """class: City"""
-
 
     __tablename__ = 'cities'
     id = Column('id', Integer, primary_key=True,
