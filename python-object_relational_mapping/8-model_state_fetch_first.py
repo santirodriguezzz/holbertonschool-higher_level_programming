@@ -1,16 +1,12 @@
 #!/usr/bin/python3
 """script that prints the first State object in database"""
-
-
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 from sys import argv
 from model_state import Base, State
 
-
 Base = declarative_base()
-
 
 if __name__ == '__main__':
 
