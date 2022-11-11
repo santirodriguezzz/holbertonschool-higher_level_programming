@@ -11,14 +11,10 @@ def add(a, b):
     """
     return (a + b)
 
-def less(a, b):
-    "function to subtract"
-    return(a - b)
-
 def mul(a, b):
     "function to multiply"
-    return(a * b)
+    return (a * b)
 
 def div(a, b):
     "function to divide"
-    return(a / b)
+    return (a / b)
