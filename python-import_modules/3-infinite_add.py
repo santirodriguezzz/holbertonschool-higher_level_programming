@@ -5,4 +5,4 @@ if __name__ == "__main__":
     add = 0
     for addend in sys.argv[1:]:
         add += int(addend)
-    print (add)
+    print(add)
