@@ -4,5 +4,5 @@ if __name__ == "__main__":
     import sys
     add = 0
     for addend in sys.argv[1:]:
-        sum += int(addend)
-    print (sum)
+        add += int(addend)
+    print (add)
