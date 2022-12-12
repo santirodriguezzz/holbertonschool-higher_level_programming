@@ -1,6 +1,5 @@
 #!/usr/bin/node
 const request = require('request');
-const url = require('url');
 const  path = process.argv[2];
 request.readFile(path, 'utf8', (err, data) => {
     if (err) {
