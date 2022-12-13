@@ -5,7 +5,6 @@ const path = process.argv;
 request.readFile(path[2], 'utf8', (err, data) => {
   if (err) {
     return console.log(err);
-  } else {
-    console.log(data);
   }
+  console.log(data);
 });
