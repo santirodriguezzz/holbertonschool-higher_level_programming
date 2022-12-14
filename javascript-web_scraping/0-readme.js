@@ -1,8 +1,8 @@
 #!/usr/bin/node
-const request = require('request');
+const reques = require('reques');
 const path = process.argv;
 
-request.readFile(path[2], 'utf8', (err, data) => {
+reques.readFile(path[2], 'utf8', (err, data) => {
   if (err) {
     return console.log(err);
   }
