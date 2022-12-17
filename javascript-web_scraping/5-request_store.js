@@ -9,7 +9,7 @@ request(args[2], function (error, response, body) {
     throw error;
   }
   web = body;
-  fs.writeFile(args[3], web, 'utf-8', (error) => {
+  rq.writeFile(args[3], web, 'utf-8', (error) => {
     if (error) {
       throw error;
     }
