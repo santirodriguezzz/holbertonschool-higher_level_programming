@@ -5,13 +5,13 @@ const args = process.argv;
 let web = 'a';
 
 request(args[2], function (error, response, body) {
-    if (error){
-        console.log(error);
+  if (error) {
+    throw error;
+  }
+  web = body;
+  fs.writeFile(args[3], web, 'utf-8', (error) => {
+    if (error) {
+      throw error;
     }
-    web = body;
-    fs.writeFile(args[3], web, 'utf-8', (error) => {
-        if (error) {
-            console.log(error);
-        }
-    });
+  });
 });
