@@ -4,6 +4,6 @@ module.exports = class Rectangle {
   constructor (w, h) {
     this.width = w;
     this.height = h;
-    // El constructor establece los valores de estos argumentos como propiedades de la Rectangleinstancia mediante la thispalabra clave
+    // El constructor establece los valores de estos argumentos como propiedades de la Rectangle instancia mediante la thispalabra clave
   }
 };
