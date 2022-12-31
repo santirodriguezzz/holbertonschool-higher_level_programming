@@ -8,7 +8,13 @@ module.exports = class Square extends square {
     /// Esto crea un nuevo objeto con el mismo ancho y alto, creando efectivamente un cuadrado
   }
 
-  charPrint (c = 'X') {
-    this.print(c);
+  charPrint (c) {
+    if (!c) c = 'X';
+    for (let i = 0; i < this.width; i++) {
+        for (let j = 0; j < this.height; j++) {
+            process.stdout.write(c);
+        }
+        console.log();
+    }
   }
 };
