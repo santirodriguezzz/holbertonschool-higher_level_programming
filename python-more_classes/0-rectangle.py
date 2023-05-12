@@ -1,4 +1,5 @@
 #!/usr/bin/python3
-""" claso of rectangle """
+""" coments """
 class Rectangle:
-        def __init__():
+        """ class for rectangle"""
+        def __init__(self, width, height):
