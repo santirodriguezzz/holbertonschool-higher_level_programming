@@ -1,5 +1,11 @@
 #!/usr/bin/python3
-#coment     
+"""
+my empty class Rectangle
+"""  
+
 class Rectangle:
-    # class rectangle 
-        def __init__(self, width, height):
+    """
+    class Rectangle
+    """
+    def __init__(self):
+        pass
