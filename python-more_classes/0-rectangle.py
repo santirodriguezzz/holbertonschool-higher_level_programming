@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """
 my empty class Rectangle
-"""  
+"""
+
 
 class Rectangle:
     """
